@@ -1,0 +1,143 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head> 
+<meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My portfolio</title>
+<style> * { margin: 0; 
+           padding: 0; 
+           box-sizing:
+           border-box;
+           font-family:Arial, sans-serif; 
+           }
+           html { 
+           scroll-behavior: smooth; 
+           } 
+           body{ 
+           background-color: #f4f7fb;
+           color: #222;
+           line-height: 1.6;
+           }
+           nav { 
+           background-color: #111827; 
+           padding: 18px 8%; display: flex; 
+           justify-content:
+           space-between;
+           align-items: center; position: sticky; 
+           top: 0; 
+           z-index: 1000; 
+           }
+           nav h2 { 
+           color: #38bdf8; 
+           } 
+           nav ul { 
+           list-style: none; display: flex;
+           gap: 25px; 
+           } 
+           nav ul li a { 
+           color: white; 
+           text-decoration: none; font-weight: bold; 
+           } 
+           nav ul li a:hover { color: #38bdf8; 
+           }
+           .hero { 
+           min-height: 90vh; display: flex;
+           justify-content: center; align-items: center; text-align: center; padding: 40px 20px; background: linear-gradient(135deg, #0f172a, #1e3a8a); color: white; 
+           } 
+           .hero h1 {
+           font-size: 50px; 
+           margin-bottom: 10px; 
+           } 
+           .hero h1 span { 
+           color: #38bdf8;
+           }
+           .hero p { 
+           font-size: 20px; 
+           margin-bottom: 25px; 
+           } 
+           .btn { 
+           display: inline-block; background-color: #38bdf8; 
+           color: #111827; 
+           padding: 12px 25px; border-radius: 6px; text-decoration: none; font-weight: bold; margin: 5px;
+           }
+          .btn:hover {
+          background-color: white; } 
+          section { 
+          padding: 70px 8%; 
+          } 
+          .section-title { 
+          text-align: center; margin-bottom: 40px; font-size: 32px; 
+          color: #1e3a8a; 
+          } 
+          .about {
+          max-width: 850px; 
+          margin: auto;
+          text-align: center; 
+          font-size: 18px; 
+          } 
+          .skills-container {
+          display: flex; 
+          justify-content: center;
+          flex-wrap: wrap; 
+          gap: 20px; 
+          } 
+          .skill { 
+          background-color: white; padding: 25px; 
+          width: 200px; 
+          text-align: center; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+          } 
+          .skill h3 { 
+          color: #1e3a8a; 
+          margin-bottom: 10px; 
+          } 
+          .projects-container {
+          display: flex; 
+          justify-content: center; flex-wrap: wrap; g
+          ap: 25px;
+          } 
+          .project { 
+          background-color: white; width: 300px; 
+          padding: 25px;
+          border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+          } 
+          .project h3 {
+          color: #1e3a8a; 
+          margin-bottom: 10px; 
+          } 
+          .project a { 
+          color: #0284c7; 
+          text-decoration: none; font-weight: bold; 
+          } .education  { 
+          max-width: 700px; 
+          margin: auto; 
+          background-color: white; padding: 30px; 
+          border-radius: 10px; 
+          box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+          } .contact { 
+          text-align: center;
+          }
+          .contact p {
+          margin: 10px; 
+          font-size: 18px; 
+          } 
+          .contact a { 
+          color: #0284c7; 
+          text-decoration: none;
+          } 
+          footer { 
+          background-color: #111827; 
+          color: white; 
+          text-align: center; padding: 20px; 
+          }  @media (max-width: 700px) { 
+          nav {
+            flex-direction:column; gap: 15px; 
+            } 
+            nav ul { 
+            gap: 12px; 
+            flex-wrap: wrap; justify-content: center; 
+            } .hero h1 {
+            font-size: 35px; 
+            } 
+            .hero p { 
+            font-size: 17px;
+            } .project, .skill { width: 100%; 
+            max-width: 350px; } } </style> </head> <body> <!-- Navigation --> <nav> <h2>Umar.dev</h2> <ul> <li><a href="#home">Home</a></li> <li><a href="#about">About</a></li> <li><a href="#skills">Skills</a></li> <li><a href="#projects">Projects</a></li> <li><a href="#contact">Contact</a></li> </ul> </nav> <!-- Hero --> <section class="hero" id="home"> <div> <h1>Hello, I'm <span>Umar Yusuf Ibrahim</span></h1> <p> Software Engineering Student & Front-End Developer </p> <a href="#projects" class="btn">View My Projects</a> <a href="#contact" class="btn">Contact Me</a> </div> </section> <!-- About --> <section id="about"> <h2 class="section-title">About Me</h2> <div class="about"> <p> I am a Software Engineering student at Federal University Dutse. I am passionate about web development and software engineering. I enjoy building useful and responsive websites that solve real-world problems. </p> <br> <p> Currently, I am developing my skills in HTML, CSS and JavaScript while working on projects such as a Health Management System. </p> </div> </section> <!-- Skills --> <section id="skills"> <h2 class="section-title">My Skills</h2> <div class="skills-container"> <div class="skill"> <h3>HTML</h3> <p>Creating structured and semantic web pages.</p> </div> <div class="skill"> <h3>CSS</h3> <p>Designing responsive and attractive websites.</p> </div> <div class="skill"> <h3>JavaScript</h3> <p>Adding interaction and functionality to websites.</p> </div> <div class="skill"> <h3>Git & GitHub</h3> <p>Managing and sharing software projects.</p> </div> </div> </section> <!-- Projects --> <section id="projects"> <h2 class="section-title">My Projects</h2> <div class="projects-container"> <div class="project"> <h3>Health Management System</h3> <p> A web-based system designed to help manage patients, doctors, appointments and billing. </p> <br> <a href="#">View Project →</a> </div> <div class="project"> <h3>Solar Products Website</h3> <p> An e-commerce website concept for displaying and selling solar products and bulbs. </p> <br> <a href="#">View Project →</a> </div> <div class="project"> <h3>Personal Portfolio</h3> <p> My personal portfolio website for showcasing my skills, projects and software development journey. </p> <br> <a href="#">View Project →</a> </div> </div> </section> <!-- Education --> <section> <h2 class="section-title">Education</h2> <div class="education"> <h3>Federal University Dutse (FUD)</h3> <p> <strong>Course:</strong> Software Engineering </p> <p> <strong>Level:</strong> 300 Level </p> <p> <strong>Expected Graduation:</strong> 2027 </p> </div> </section> <!-- Contact --> <section id="contact"> <h2 class="section-title">Contact Me</h2> <div class="contact"> <p> 📧 Email: <a href="mailto:umarfarukrmg@gmail.com"> umarfarukrmg@gmail.com </a> </p> <p> 💻 GitHub: <a href="#" target="_blank"> umarfarukrmg</a> </p> <p> 📱 Phone: 09036576484 </p> </div> </section> <footer> <p> © 2026 Umar Yusuf Ibrahim. All Rights Reserved. </p> </footer> </body> </html> 
